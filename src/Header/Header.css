@@ -1,0 +1,19 @@
+.headerContainer{
+    display: flex;
+    margin-left: 18%;
+    margin-top: 2%;
+}
+
+.usersIcon {
+    font-size: 3rem;
+    color: #fffff2;
+    background-color: rgba(220, 220, 220, 1);
+}
+
+.headerText{
+    padding-left: 2%;
+}
+
+.headerUserNumberText{
+    font-size: 0.7rem;
+}

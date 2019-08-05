@@ -4,4 +4,17 @@
     border-style: none;
     width: 60%;
     margin-left: 10%;
+    background-color: #87cefa;
+    color: #fffff2;
+    padding: 0.2%;
+}
+
+.searchBar::placeholder{
+    color: #fffff2;
+}
+
+.searchIcon{
+    position: absolute;
+    margin-left: 67.5%;
+    margin-top: 0.3%;
 }
