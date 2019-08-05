@@ -22,10 +22,8 @@ class App extends React.Component {
   }
 
   async componentDidMount(){
-    console.log('componentDidMount() Called')
     const promiseArr = await this.fetchEngine(this.fetchFiles, this.fetchUsers, this.fetchTypes);
     const [resolvedFiles, resolvedUsers, resolvedTypes] = promiseArr;
-    console.log(resolvedFiles);
     this.setTFetchedFileTitlesFromFilesEndpointToState(resolvedFiles);
     this.setFetchedFileTypesFromFilesEndpointToState(resolvedFiles);
     this.setUserNumbersFromFilesEndpointToState(resolvedFiles);
@@ -33,16 +31,13 @@ class App extends React.Component {
  }
 
   fetchFiles ()  {
-    console.log('fetchFiles() called')
     return fetch( 'http://localhost:3001/files', {cache: 'no-store'})
       .then(response => response.json())
   };
 
   fetchUsers () {
-    console.log('fetchUsers() called');
     return fetch('http://localhost:3001/users', {cache: 'no-store'})
       .then( response => {
-        console.log(response);
         if (!response.ok || response.statusText === "Internal Server Error") { 
           this.componentDidMount();
         }
@@ -55,7 +50,6 @@ class App extends React.Component {
   };
 
   fetchTypes  () {
-    console.log('fetchTypes() called')
     return fetch('http://localhost:3001/types', {cache: 'no-store'})
     .then(response => response.json())
   };
@@ -130,7 +124,6 @@ class App extends React.Component {
 
 
   render() {
-    // console.log(this.state)
     return (
       <>
         <Search searchIcon={faSearch}/>
