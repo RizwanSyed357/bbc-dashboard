@@ -11,7 +11,7 @@ Access the server at http://localhost:3001.
 
 ## Available Scripts
 
-Once the remote server is set up, switch back to the cloned project director of this application and run
+Once the remote server is set up, switch back to the cloned project directory of this application and run
 
 ## 'npm install
 
