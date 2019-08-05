@@ -10,7 +10,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       fileTitles: [],
-      authors: [], 
+      authors: [],
+      admins: [], 
       fileTypes: [],
       fileTypesNum: 0
     }
@@ -133,7 +134,7 @@ class App extends React.Component {
     return (
       <>
         <Search searchIcon={faSearch}/>
-        <Header icon={faUsers}/> 
+        <Header userCount={this.state.authors.length} adminCount={this.state.admins.length} icon={faUsers}/> 
         <div className='latestContent'>Latest Content</div>
       </>
     );
