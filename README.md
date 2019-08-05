@@ -1,6 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Setting up API Endpoints on Local Remote Server 
+
+Request access to this DropBox zip file: https://www.dropbox.com/l/scl/AADEnZ0ScIrwFe93sSqraFeFbZ9jp_VhthM.
+Download and unzip the file.
+Inside the api/ folder: 
+1) Run npm install
+2) Run node index.js 
+Access the server at http://localhost:3001.
+
 ## Available Scripts
+
+Once the remote server is set up, switch back to the cloned project director of this application and run
+
+## 'npm install
 
 In the project directory, you can run:
 
